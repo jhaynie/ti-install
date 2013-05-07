@@ -5,7 +5,7 @@ This is an *EXPERIMENTAL* project to build an all-in-one install script for Tita
 
 You can run the installer from a Unix/OSX command shell:
 
-	> sudo curl https://github.com/jhaynie/ti-installer/blob/master/install.sh | sh
+	> sudo curl https://raw.github.com/jhaynie/ti-install/master/install.sh | sudo sh
 
 What does this installer do?
 ----------------------------

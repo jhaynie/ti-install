@@ -113,7 +113,7 @@ fi
 tii=`which ti-install 2>&1`
 ret=$?
 if [ $ret -eq 0 ] && [ -x "$tii" ]; then
-	npm install https://github.com/jhaynie/ti-install.git -g 2>&1
+	npm install https://github.com/jhaynie/ti-install/archive/master.zip -g 2>&1
 fi 
 
 # make sure that ti exists
@@ -167,7 +167,7 @@ fi
 # install android
 if [ $android -eq 0 ]; then
 	logpartial 'installing android ... '
-	node lib/android_installer.js 
+	ti-install androidinstall
 	android=`which android 2>&1`
 	ret=$?
 	if [ $ret -eq 0 ] && [ -x "$android" ]; then
@@ -181,12 +181,12 @@ fi
 
 # run titanium setup to check environment
 log "Checking environment..."
-node lib/tisetup.js
+ti-install setup
 ret=$?
 if [ $ret -eq 2 ]; then
 	echo ${bldgry} 2>&1
 	titanium sdk install latest --force --no-colors --no-banner
-	node lib/tipostinstall.js 
+	ti-install tipostinstall
 else
 	if [ $ret -eq 1 ]; then
 		exit $ret
