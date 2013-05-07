@@ -113,7 +113,7 @@ fi
 tii=`which ti-install 2>&1`
 ret=$?
 if [ $ret -eq 0 ] && [ -x "$tii" ]; then
-	npm install https://github.com/jhaynie/ti-install/archive/master.zip -g 2>&1
+	npm install https://github.com/jhaynie/ti-install/tarball/master -g 2>&1
 fi 
 
 # make sure that ti exists
