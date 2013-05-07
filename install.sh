@@ -186,7 +186,7 @@ ret=$?
 if [ $ret -eq 2 ]; then
 	echo ${bldgry} 2>&1
 	titanium sdk install latest --force --no-colors --no-banner
-	ti-install tipostinstall
+	ti-install postinstall
 else
 	if [ $ret -eq 1 ]; then
 		exit $ret
