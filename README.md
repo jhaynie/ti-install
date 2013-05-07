@@ -48,6 +48,7 @@ To Do
 
 - Add Studio Download & Install Support
 - Add Proxy Support
+- Silent option
 
 
 Environments
@@ -56,6 +57,9 @@ Environments
 Right now, this works on a very limited set of environments.
 
 - Mac OSX 10.8.3
+
+Currently, this does not support Windows (no good command shell) and likely won't 
+work on Linux (although that is planned).
 
 
 Bug Reportings
@@ -76,4 +80,4 @@ screw up your dev environment so please be careful!
 License
 -------
 Copyright (c) 2013 by Jeff Haynie, All Rights Reserved.
-Licensed under the Apache Public License, v2.
+Licensed under the [Apache Public License, v2](https://raw.github.com/jhaynie/ti-install/master/LICENSE).
