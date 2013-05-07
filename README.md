@@ -29,6 +29,13 @@ The script will attempt to install Android if not found.
 
 This installer does not yet install Titanium Studio but will eventually.
 
+To Do
+-----
+
+- Add Studio Download & Install Support
+- Add Proxy Support
+
+
 Environments
 ------------
 

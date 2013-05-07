@@ -167,7 +167,7 @@ fi
 # install android
 if [ $android -eq 0 ]; then
 	logpartial 'installing android ... '
-	ti-install androidinstall
+	ti-install androidinstall --quiet
 	android=`which android 2>&1`
 	ret=$?
 	if [ $ret -eq 0 ] && [ -x "$android" ]; then
