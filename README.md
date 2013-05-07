@@ -16,6 +16,12 @@ Then run the android simulator:
 	> cd foo
 	> titanium build --platform android --avd-id 2
 
+As of Titanium 3.1.0 there is a [bug](https://jira.appcelerator.org/browse/TIMOB-13775) that prevents 
+Android from running if you don't specify and avd-id and if you have fewer than 7 defined platforms in your 
+Android environment.  This has been fixed and is available in the upcoming 3.2.0 release, which means you will
+no longer need to specify the avd-id.  If you are using Studio, you will not experience this bug since Studio
+correctly passes the right avd-id each time it launches the CLI.
+
 
 What does this installer do?
 ----------------------------
