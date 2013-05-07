@@ -1,11 +1,21 @@
 Titanium All-in-One Installer
 =============================
 
-This is an *EXPERIMENTAL* project to build an all-in-one install script for Titanium.
+This is an *EXPERIMENTAL* project to build an all-in-one install script for [Appcelerator Titanium](http://github.com/appcelerator/titanium_mobile).
 
 You can run the installer from a Unix/OSX command shell:
 
-	> curl https://raw.github.com/jhaynie/ti-install/master/install.sh | sudo sh
+	> sudo curl https://raw.github.com/jhaynie/ti-install/master/install.sh | sudo sh
+
+After installation, you should create a new project:
+
+	> titanium create --platforms android --id com.foo --name foo --type app --url http://foo.com -d .
+
+Then run the android simulator:
+
+	> cd foo
+	> titanium build --platform android --avd-id 2
+
 
 What does this installer do?
 ----------------------------
